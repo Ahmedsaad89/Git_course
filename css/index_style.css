@@ -1,0 +1,184 @@
+body
+{background-color: #4e4e4e; font-family: 'segoe ui light';}
+
+.home-bar
+{position: relative;}
+
+.home-bar::before
+{content:""; background-color: #FFF; position: absolute; bottom: .2rem;  width: 2rem; height: .2rem;}
+
+/* .type-animation span::before
+{content:""; font-size: 2.rem; border-right: .01rem solid gray; overflow: hidden;;
+bottom: 0; left: 0%; animation: animate 3s steps(14) infinite ; position: absolute;} */
+
+.type-animation::after
+{content: " "; position: absolute; animation: animate 10s steps(19,end) infinite;
+      white-space: nowrap; overflow: hidden; border-right: 1px solid #fff; animation-direction: alternate;  }
+
+@keyframes animate
+
+{ 
+     0% {width: 220px; transform: translateX(-80px);  font-size: 2rem; content: " Web Developer";} 
+     10% {width: 0px;}
+     30% {width: 200px; transform: translateX(-80px); font-size: 2rem; content: " Web Designer";}  
+     40% {width: 0px;}
+     60%{width: 200px; transform: translateX(-80px);  font-size: 2rem; content: "CEO DevFolio";}
+     80% {width: 0px;}
+     100% {width: 250px;transform: translateX(-80px);  font-size: 2rem; content: "Graphic Designer";}  
+    
+}
+
+
+
+
+.header
+{background-image: url(../images/intro-bg.jpg); background-size: cover; height: 620px; background-position: center center; background-attachment: fixed;}
+.layout
+{ background-color: rgba(0,0, 0, .5)}
+
+
+/*---------------------------------------End Section home ---------------------------*/
+
+.progress
+{background-color: #cde1f8; margin:.5rem 0 1.2rem 0;height: .7rem;}
+
+
+/*---------------------------------------End Section home---------------------------*/
+
+.services .ico-circle
+{font-size: 2rem; padding: 10px; border: 3px solid #09c; border-radius:50%; box-shadow: 0 0 0 5px #09c; }
+
+.t-services
+{ position: relative;}
+
+
+.t-services h3
+{font-size: 3rem;}
+
+.t-services::before
+{content:""; background-color: #0078ff; position: absolute; bottom: -1rem; left: 48%; width: 2.5rem; height: .4rem;}
+
+
+.service-content h2
+{font-size: 1.4rem; font-weight: 600;}
+/*---------------------------------------End Section Services---------------------------*/
+
+.about .counter
+{background-image: url(../images/post-3.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+background-position: center center; }
+.counter .layer-out
+{ background-color: rgba(8, 8, 250, .6);}
+
+.about h2
+{position: relative;}
+.about h2::before
+{content:""; background-color: blue; position: absolute; bottom: -.5rem; width: 5rem; height: .1rem;}
+
+.SERVICE:hover .ico-circle
+{font-size: 2rem; padding: 10px; margin: 10px; border: 3px solid blue; color: #fff; border-radius:50%;  background-color: blue; transition:.5s ease-in-out;
+     transform: scale(1.2);}
+
+
+
+
+.counter-ico .ico-circle
+{font-size: 1.5rem; padding: 10px; margin: 10px; border: 3px solid #cde1f8; border-radius:50%; box-shadow: 0 0 0 3px #cde1f6; }
+
+/*---------------------------------------End Section about-----------------------------*/
+
+.portfolio-name
+{font-weight: 800; font-size: 3rem;}
+
+.text-portfolio
+{position: relative;}
+
+.text-portfolio::before
+{content:""; background-color: #0078ff; position: absolute; bottom: -1rem; left: 48%; width: 2.5rem; height: .4rem;}
+
+.portfolio .portfolio-icon-circle 
+{font-size: 1rem; padding: 2px; margin: 2px; border: 2px solid #09c; border-radius:50%; }
+
+.portfolio-img
+{ transition: transform .5s .2s ease-in-out;overflow: hidden !important; }
+
+.portfolio-img:hover
+{ transform: scale(1.1); }
+
+
+
+
+/*---------------------------------------End Section portfolio---------------------------*/
+
+.member
+{background-image: url(../images/overlay-bg.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+
+.member .layer-out
+{ background-color: rgba(69, 150, 236, .7);}
+
+
+.circle-ico-qoute
+{font-size: 1.5rem; padding: 4px; margin: 4px; border: 2px solid #fff; border-radius:50%; color:#0078ff; }
+
+/*---------------------------------------End Section member-------------------------------*/
+
+.text-blog .address
+{font-size: 3rem; font-weight: 900;}
+
+.img-footer
+{width: 25px; height: 25px;}
+
+.card-img
+{position: relative;}
+
+.card-center-box
+{position: absolute; bottom: -20;}
+
+.icon-time-footer
+{font-size: .9rem;}
+/*---------------------------------------End Section BLOG-------------------------------*/
+
+.text-blog
+{position: relative;}
+
+.text-blog::before
+{content:""; background-color: #0078ff; position: absolute; bottom: 1rem; left: 48%; width: 2.5rem; height: .4rem;}
+
+.card-center-box .text-box
+{font-size: .7rem; letter-spacing:1px}
+
+
+/*-----------------------------------------------End Section Card----------------------------*/
+
+.footer
+{background-image: url(../images/overlay-bg.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+     background-position:center center ; position: relative;}
+
+
+.footer .layer-out
+ { background-color: rgba(69, 150, 236, .7);}
+
+.footer h2
+{position: relative;}
+
+.footer h2::before
+{content:""; background-color: #0078ff; position: absolute; bottom: -.6rem; width: 5.5rem; height: .2rem;}
+
+
+.icon-social-media .circle-icon i
+ {font-size: 1.5rem; padding:10px ; margin: 5px; border: 2px solid #0078ff; border-radius:50%;}
+
+.copyright-box 
+{position: absolute; bottom: 0; color: #fff;}  
+
+.footer .design-by
+{font-family: 'Pacifico', cursive; color: #fff; box-shadow: 2 2 0 1x #fff;}
+
+.back-to-top i
+{width: 2rem; height: 2rem; background-color: #0078ff; border: 1px solid #0078ff; position: fixed; bottom: 1.3rem; right: 1rem;
+    cursor: pointer; color:#fff;}
+
+
+
+
+
+
